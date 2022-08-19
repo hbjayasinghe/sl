@@ -1,0 +1,5 @@
+ALTER TABLE `crew_detals` ADD COLUMN `deleted_at` TIMESTAMP NULL DEFAULT NULL AFTER `updated_at`;
+
+INSERT INTO `permissions` (`title`) VALUES ('crew_access');
+
+modify .env database name
